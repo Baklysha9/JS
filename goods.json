@@ -1,0 +1,33 @@
+{
+	"0001" : {
+		"name": "Яблоки",
+		"cost": 44,
+		"description":"Сочные и спелые яблоки",
+		"order": 3,
+		"img": "images/apple-128.png"
+	},
+
+	"0002" : {
+		"name": "Бананы",
+		"cost": 78,
+		"description":"Сладкие бананы",
+		"order": 4,
+		"img": "images/banana-128.png"
+	},
+
+	"0003" : {
+		"name": "Киви",
+		"cost": 34,
+		"description":"Вкусный киви",
+		"order": 1,
+		"img": "images/fruit_kiwi-128.png"
+	},
+
+	"0004" : {
+		"name": "Виноград",
+		"cost": 89,
+		"description":"Изысканный виноград",
+		"order": 10,
+		"img": "images/grape-128.png"
+	}
+}
