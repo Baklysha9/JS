@@ -9,7 +9,7 @@ function loadGoods(){
 		for (var key in data){
 			out+='<div class = "card">';
 			out+='<h3>'+data[key]['name']+'</h3>';
-			out+='<p>'+data[key]['cost']+'</p>';
+			out+='<p>Цена: '+data[key]['cost']+'</p>';
 			out+='<img src="'+data[key].img+'">';
 			out+='<h4>'+data[key]['description']+'</h3>';
 			out+='</div>';
