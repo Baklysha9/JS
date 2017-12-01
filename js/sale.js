@@ -1,38 +1,4 @@
 var cart = {}; // моя корзина
-
-var slideIndex=1;
-showSlides(slideIndex);
-
-function plusSlides(n){
-	showSlides(slideIndex += n);
-}
-
-function currentSlide(n){
-	showSlides(slideIndex = n);
-}
-
-function showSlides(n){
-	var i;
-	var slides = document.getElementsByClassName("mySlides");
-	var dots = document.getElementsByClassName("dot");
-
-	if(n > slides.length){
-		slideIndex = 1;
-	}
-	if(n < 1){
-		slideIndex = slides.length;
-	}
-	for(i=0; i<slides.length; i++){
-		slides[i].style.display = "none";
-	}
-	for(i=0; i < dots.length; i++){
-		dots[i].className = dots[i].className.replace("active","");
-	}
-	 slides[slideIndex-1].style.display = "block";
-	 dots[slideIndex-1].className+= " active";
-}
-
-
 $ ('document').ready(function(){
 	loadGoods();
 	checkCart();
@@ -41,7 +7,7 @@ $ ('document').ready(function(){
 });
 function loadGoods(){
 	//загружаю товары на страницу
-	$.getJSON('goods.json', function(data) {
+	$.getJSON('sale.json', function(data) {
 		//console.log(data);
 		var out ='';
 		for (var key in data){
@@ -53,7 +19,7 @@ function loadGoods(){
 			out+='<button class="add-to-cart" data-art="'+key+'">В корзину</button>';
 			out+='</div>';
 		}
-		$('#goods').html(out);
+		$('#sale').html(out);
 		$('button.add-to-cart').on('click', addToCart);
  	});
 
