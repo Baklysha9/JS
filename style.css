@@ -1,27 +1,41 @@
 * {
 	margin: 0;
 	padding: 0;
+
 }
 .card {
-	width: 250px;;
+	width: 220px;
 	height: 350px;
-	border: 1px solid black;
-	margin:30px;
+	border: 5px solid #632108;
+	margin-left:6%;
+	margin-top: 20px;
 	float: left;
 	text-align: center;
 	padding: 20px;
+	color: #632108;
+	font-family: 'Europe Bold';
+	position: relative;
+
 }
 .card button {
 	display: block;
-	margin-top: 30px;
-	padding:20px 100px;
+	background: #632108;
+	text-decoration: none; 
+	border: none;
+	color: #ff9933;
+	width: 180px;
+	height: 40;
+	position: absolute;
+	bottom: 10;
+	left: 15%;
+	font-family: 'Europe Bold';
+	font-size: 18px;
+
 }
 header {
 	width: 100%;
 	height: 80px;
 	background: #632108;
-	box-shadow: 3px 4px 5px;
-	margin-bottom:2px;
 }
 nav {
 	margin-right: 10%;
@@ -39,7 +53,6 @@ nav li {
 nav li a {
 	text-decoration: none;
 	color: #ff9933;
-	text-shadow: 
 }
 figure {
 	width: 140px;
@@ -121,11 +134,144 @@ figure {
 	100%{opacity:1;}
 }
 /*после слайдера*/
-.sale {
-	width: 100%;
+#sale {
+	width: 80%;
+	margin: 2% 10% 2% 10%; 
 	height: auto;
 }
-.sale img {
-	width: 100%;
-	height: auto;
+.imgtovar0001 {
+	width: 200px;
+	height: 70px;
+
 }
+
+.imgtovar0003 {
+	width: 200px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+
+}
+.imgtovar0004 {
+	width: 200px;
+	height: 122px;
+}
+.imgtovar0005 {
+	width: 200px;
+	height: 135px;
+
+}
+.imgtovar0006 {
+	width: 200px;
+	height: 135px;
+}
+.imgtovar0007 {
+	width: 100px;
+	height: 165px;
+}
+.imgtovar0008 {
+	width: 130px;
+	height: 165px;
+}
+.imgtovar0009 {
+	width: 130px;
+	height: 165px;
+}
+.imgtovar0010 {
+	width: 200px;
+}
+.imgtovar0011 {
+	width: 200px;
+	height: 100px;
+}
+.imgtovar0013 {
+	width: 160px;
+	height: 150px;
+}
+.imgtovar0014 {
+	width: 120px;
+	height: 120px;
+}
+.imgtovar0015	 {
+	width: 120px;
+	height: 120px;
+}
+.imgtovar0016	 {
+	width: 120px;
+	height: 120px;
+}
+.imgtovar0017	 {
+	width: 150px;
+	height: 120px;
+}
+.imgtovar0018	 {
+	width: 150px;
+	height: 120px;
+}
+.imgtovar0019	 {
+	width: 190px;
+	height: 120px;
+}
+.imgtovar0020 {
+	width: 100px;
+	height: 120px;
+}
+.imgtovar0021	 {
+	width: 190px;
+	height: 120px;
+}
+.imgtovar0022	 {
+	width: 190px;
+	height: 120px;
+}
+.imgtovar0023	 {
+	width: 190px;
+	height: 120px;
+}
+.imgtovar0024	 {
+	width: 190px;
+	height: 120px;
+}
+.price {
+	font-weight: bold;
+	color: #ff9933;
+	margin-top: 5%;
+}
+.h2-one {
+	font-size: 30px;
+	font-family: 'Europe Bold';
+	font-weight: bold;
+	text-align: center;
+	margin: 50px;
+}
+.one {
+	width: 100%;
+	height: 700px;
+	background: url("images/People_Hunter_with_dogs_in_the_sun_1071301_.jpg") no-repeat;
+	background-size: 100%;
+}
+
+#mini-cart {
+    position: fixed; /* Фиксированное положение */
+    right: 10px; /* Расстояние от правого края окна браузера */
+    bottom: 5%; /* Расстояние сверху */
+    padding: 10px; /* Поля вокруг текста */ 
+    background: white; /* Цвет фона */ 
+    border: 3px solid #333; /* Параметры рамки */ 
+    width: 300px;
+    height: auto;
+    display: none;
+    z-index: 5;
+   }
+   .text {
+    height: 1000px;
+   }
+   .description {
+   	font-size: 12px;
+   	font-family: arial;
+   }
+   .delete {
+   	border: none;
+   	color white;
+   }
+ 
+  
