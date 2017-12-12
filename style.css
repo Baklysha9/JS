@@ -30,46 +30,51 @@
 	left: 15%;
 	font-family: 'Europe Bold';
 	font-size: 18px;
-
-}
-header {
-	width: 100%;
-	height: 80px;
-	background: #632108;
 }
 nav {
-	margin-right: 10%;
-	float: right;
-	display: inline-block;
-	margin-top: -50px;
+text-align: right;
+	width: 100%;
+	background: #632108;
 }
-nav li {
+nav ul li {
+
+	text-align: right;
 	display: inline-block;
 	font-size: 20px;
-	margin-right: 60px;
 	font-family: 'Europe Bold';
 	text-shadow: black 2px 3px 4px;
+	text-transform: uppercase;
 }
-nav li a {
+nav a {
+	display: block;
 	text-decoration: none;
 	color: #ff9933;
+	padding: 20px;
 }
-figure {
-	width: 140px;
-	height: 140px;
+nav a:hover {
+	background-color: rgba(0,0,0,.4);
+}
+.menu-trigger {
+	text-align: center;
+}
+
+.figure {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 110px;
+	height: 110px;
 	background: white;
 	border-radius: 50%;
-	margin-bottom: 150px;
-	position: relative;
-	z-index: 5;
 	box-shadow: black 4px 5px 6px;
+	z-index: 10;
 }
 
 /*Слайдер*/
 .slideshow-container{
 	max-width: 1000px;
-	position: relative;
 	margin: auto;
+	position: relative;
 
 }
 .prev, .next{
@@ -245,9 +250,12 @@ figure {
 }
 .one {
 	width: 100%;
-	height: 700px;
+	height:100%;
 	background: url("images/People_Hunter_with_dogs_in_the_sun_1071301_.jpg") no-repeat;
 	background-size: 100%;
+}
+.menu-trigger {
+	display: none;
 }
 
 #mini-cart {
@@ -257,11 +265,21 @@ figure {
     padding: 10px; /* Поля вокруг текста */ 
     background: white; /* Цвет фона */ 
     border: 3px solid #333; /* Параметры рамки */ 
-    width: 300px;
-    height: auto;
+    width: 200px;
+    font-family: 'Europe Bold';
+    max-height: 400px;
     display: none;
     z-index: 5;
+    overflow: auto;
    }
+ #mini-cart a {
+ 	text-decoration: none;
+ 	font-size: 20px;
+ 	color: #632108;
+ 	margin-left: 25%;
+ 	border: 2px solid black;
+ 	padding: 10px; 
+ }
    .text {
     height: 1000px;
    }
@@ -273,5 +291,49 @@ figure {
    	border: none;
    	color white;
    }
- 
+ 	.ix {
+ 		border: 1px solid black;
+		border-radius: 50%;
+		background: white;
+		width: 20px;
+		height: 20px;
+		margin-bottom: 20px;
+ 	}
+ @media screen and (min-width: 800px){
+ 	.figure {
+ 		display: block;
+ 	}
+ }
+ @media screen and (max-width: 800px){
+
+ 	nav ul li {
+ 		display: block;
+ 		text-align: center;
+ 	}
+ 	nav a {
+ 		border-bottom: 1px solid rgba(0,0,0,.2);
+ 	}
+ 	.menu-trigger {
+ 		display: block;
+ 		text-align: center;
+ 		 font-family: 'Europe Bold';
+ 	}
+ 	nav ul {
+		display: none;
+ 	}
+	.prev,.next {
+		display: none;
+	}
+	.figure {
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		-webkit-transform: translate(-50%);
+	-moz-transform: translate(-50%);
+	}
+ }
+ @media screen and (max-width: 500px)
+
   

@@ -64,11 +64,47 @@
 			font-weight: bold;
 		}
 		.itog {
+			width: 80%;
+			margin-left: 10%;
 			height: 50px;
 			background: white;
 		}
 		main {
 			background: url(images/camo-camouflage-army-texture-1157.jpg);
+		}
+		.email-field {
+			width: 80%;
+			margin-left: 10%;
+			text-align: center;
+			background: white;
+			padding-top: 30px;
+			padding-bottom: 30px;
+			font-family: 'Europe Bold';
+		}
+		.email-field p {
+			padding: 10px;
+			font-family: 'Europe Bold';	
+		
+		}
+		.email-field input {
+		float: right;
+		margin-right: 30%;
+			border: 2px solid #632108;
+			background:white; 
+			color: #632108;
+			font-family: 'Europe Bold';	
+		}
+		.email-field button {
+			margin-right: 30%;
+			float: right;	
+			width: 100px;
+			height: 40px;
+			margin-bottom: 50px;
+			border: 2px solid #632108;
+			background:#ff9933; 
+			color: #632108;
+			font-family: 'Europe Bold';	
+
 		}
 
 	</style>
@@ -76,11 +112,14 @@
 	<body>
 		<main>
 		<h1>Корзина</h1>
-		<div id="my-cart">
-			
-		</div>
+		<div id="my-cart"></div>
 		<div class="itog">
-			
+		</div>
+		<div class="email-field">
+			<p>Имя: <input type="text" id="ename"></p>
+			<p>E-mail: <input type="email" id="email"></p>
+			<p>Телефон: <input type="phone" id="ephone"></p>
+			<p><button class="send-email">Заказать</button></p>
 		</div>
 		</main>
 

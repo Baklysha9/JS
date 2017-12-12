@@ -4,13 +4,30 @@
 			<meta charset="utf-8">
 			<link rel="stylesheet" href="style.css">
 			  <link href="http://allfont.ru/allfont.css?fonts=europe-bold" rel="stylesheet" type="text/css" />
+<script>
+$ ('document').ready(function() {
 
+$ ('.menu-trigger').click(function() {
+		$('nav li').slideToggle(500);
+		});
+	$ (window).resize(function() {
+		if ($(window).width() > 500){
+			$ ('nav ul').removeAttr('style');
+		}
+	});
+
+});
+		
+</script>
 	</head>
 	<body>
-		<header>
-			<figure><img src="images/111.svg" alt="LOGO" width="140px" height="140px"></figure>
-			</header>
-			<nav><ul>
+
+		
+			<nav>
+			<img src="images/111.svg" alt="LOGO" width="140px" height="140px" class="figure">
+				<a href="#" class="menu-trigger"><img src="images/111.svg" alt="LOGO" width="140px" height="140px" class="figure"></a>
+			
+			<ul>
 				<li><a href="#hunt">Охота</a></li>
 				<li><a href="#fish">Рыбалка</a></li>
 				<li><a href="#boot">Обувь</a></li>
@@ -18,6 +35,7 @@
 				<li><a href="#lodka">Лодки</a></li>
 					</ul>
 			</nav>
+
 		<div class="slidershow-container">
 		<div class="mySlides fade">
 			
@@ -62,15 +80,15 @@
 		
 	</section>
 		<div id="sale">
-			<div class="cart">
+			<div class="caцrt">
 				
 			</div>
 		</div>	
-		<section>Ты новичок - получи скидку</section>
+		<h2 class="h2-one">Каталог:</h2>
 	
 		<main>
 		<div id="mini-cart">
-			
+			<h3>Товаров в корзине</h3>
 		</div>
 			<div id="goods">
 				<div class="card">

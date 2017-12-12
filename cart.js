@@ -31,7 +31,7 @@ $.getJSON('goods.json', function (data){
 				kol = goods[key].kol;
 		}
 		$('#my-cart').html(out);
-		$('.itog').html(sum);
+		$('.itog').html('Итого: '+sum+' руб');
 		$('.plus').on('click', plusGoods);
 		$('.minus').on('click', minusGoods);
 		$('.delete').on('click', deleteGoods);
@@ -74,3 +74,34 @@ function checkCart() {
 function saveCartToLS(){
 	localStorage.setItem('cart', JSON.stringify(cart));
 }
+
+function sendEmail() {
+		var ename = $('#ename').val();
+		var email = $('#email').val();
+		var ephone = $('#ephone').val();
+		if (ename!='' && email!='' && ephone!=''){
+				if ( $.isEmptyObject(cart) ) {
+							alert("Корзина пуста!");
+				}
+				else {
+						$.post (
+								"core/mail.php",
+								{
+									"ename" : ename,
+									"email" : email,
+									"ephone" : ephone,
+									"cart" : cart
+								},
+								function(data){
+									console.log(data); 
+								}
+							);
+				}
+		}
+		else {
+			alert("Заполните поля!");
+		}
+}
+$(document).ready(function () {
+		$('.send-email').on('click', sendEmail);// отправка письма 
+});
