@@ -89,6 +89,8 @@
 		.email-field input {
 		float: right;
 		margin-right: 30%;
+		padding: 10px;
+		margin-bottom: 10px;
 			border: 2px solid #632108;
 			background:white; 
 			color: #632108;
@@ -104,8 +106,39 @@
 			background:#ff9933; 
 			color: #632108;
 			font-family: 'Europe Bold';	
+			margin-right: 20px;
 
 		}
+
+		@media screen and (max-width: 500px) {
+ 	#my-cart h3 {
+ 		margin: 70px;
+ 		width: 70%;
+ 		font-size: 25px;
+ 	}
+ 		#my-cart img {
+ 			width: 70%;
+ 		}
+ 		#my-cart .sena  {
+ 			margin-left: 35%;
+ 			margin-bottom: 30px;
+ 		}
+ 		#my-cart .sena p {
+ 			margin-left: 45%;
+ 		}
+ 		 .itog {
+ 			font-size: 25px;
+ 		}
+ 		.email-field input {
+ 			padding: 10px;
+ 			margin-bottom: 10px;
+ 		}
+ 	}
+ 		@media screen and (max-width: 400px) {
+ 			.email-field input {
+ 			margin-right: 15%;
+ 		}
+ 		} 
 
 	</style>
 	</head>
@@ -116,10 +149,10 @@
 		<div class="itog">
 		</div>
 		<div class="email-field">
-			<p>Имя: <input type="text" id="ename"></p>
-			<p>E-mail: <input type="email" id="email"></p>
-			<p>Телефон: <input type="phone" id="ephone"></p>
-			<p><button class="send-email">Заказать</button></p>
+			<p><input type="text" id="ename" placeholder="Имя"></p>
+			<p><input type="email" id="email" placeholder="Почта"></p>
+			<p><input type="phone" id="ephone" placeholder="Телефон"></p>
+			<button class="send-email">Заказать</button>
 		</div>
 		</main>
 

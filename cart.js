@@ -96,6 +96,7 @@ function sendEmail() {
 									console.log(data); 
 								}
 							);
+						alert("ВСЕ хорошо");
 				}
 		}
 		else {
